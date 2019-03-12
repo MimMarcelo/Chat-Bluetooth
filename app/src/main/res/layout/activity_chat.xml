@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcvHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/lltMessage"
+        />
+
+    <LinearLayout
+        android:id="@+id/lltMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            android:layout_marginLeft="@dimen/default_distance"
+            android:layout_marginRight="@dimen/small_distance"
+            android:layout_marginBottom="@dimen/default_distance">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edtMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mensagem"
+                android:inputType="textCapSentences"
+                android:maxLength="30"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnSendMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/enviar"
+            style="@style/RaisedButton"
+            android:layout_marginRight="@dimen/default_distance"
+            android:layout_marginBottom="@dimen/default_distance"/>
+    </LinearLayout>
+</RelativeLayout>

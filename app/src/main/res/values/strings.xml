@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Chat Bluetooth</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="abrir_servico">Abrir serviço</string>
+    <string name="buscar_servico">Buscar serviço</string>
+    <string name="mensagem">Mensagem</string>
+    <string name="enviar">ENVIAR</string>
+    <string name="texto_vazio">Digite algo para enviar</string>
+    <string name="texto_longo">Texto muito longo não será enviado</string>
+    <string name="desconectar">Desconectar</string>
+</resources>

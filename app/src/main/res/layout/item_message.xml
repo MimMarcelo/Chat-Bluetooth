@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lltMessage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/small_distance"
+    android:layout_marginTop="@dimen/small_distance"
+    android:layout_marginLeft="@dimen/default_distance"
+    android:layout_marginRight="@dimen/default_distance"
+    android:orientation="vertical"
+    android:background="@color/secondaryColor">
+
+    <TextView
+        android:id="@+id/txtSender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_distance"
+        android:layout_marginLeft="@dimen/small_distance"
+        android:layout_marginRight="@dimen/small_distance"
+        style="@style/Base.TextAppearance.AppCompat.Small.Inverse"/>
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_distance"
+        android:layout_marginRight="@dimen/small_distance"
+        android:layout_marginBottom="@dimen/small_distance"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/primaryTextLightColor"/>
+</LinearLayout>

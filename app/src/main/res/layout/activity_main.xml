@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/swtBluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bluetooth"
+        android:layout_margin="@dimen/default_distance"/>
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/swtOpenService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/abrir_servico"
+        android:layout_marginLeft="@dimen/default_distance"
+        android:layout_marginRight="@dimen/default_distance"
+        android:layout_marginBottom="@dimen/default_distance"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnSearchService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buscar_servico"
+        style="@style/RaisedButton"
+        android:layout_marginLeft="@dimen/default_distance"
+        android:layout_marginRight="@dimen/default_distance"
+        android:layout_marginBottom="@dimen/default_distance"/>
+
+</LinearLayout>
